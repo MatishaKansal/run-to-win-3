@@ -29,15 +29,26 @@ class Game {
       form.display();
     }
 
-    car1 = createSprite(100,200);
+    car1 = createSprite(300,200);
+    car1.scale = 0.5;
     car1.addImage("car1",car1img);
-    // car2 = createSprite(300,200);
-    // car2.addImage("car2",car2img);
-    // car3 = createSprite(500,200);
-    // car3.addImage("car3",car3img);
-    // car4 = createSprite(700,200);
-    // car4.addImage("car4",car4img);
-    cars = [car1];
+    car2 = createSprite(500,200);
+    car2.addImage("car2",car2img);
+    car2.scale = 0.5;
+    car3 = createSprite(700,200);
+    car3.addImage("car3",car3img);
+    car3.scale = 0.75;
+    car4 = createSprite(900,200);
+    car4.scale = 0.5;
+    car4.addImage("car4",car4img);
+    cars = [car1, car2, car3, car4];
+    box1 = createSprite(width/2, 500, width -350, 20);
+    box2 = createSprite(width/2, 0, width -350, 20);
+    box3 = createSprite(width/2, -500, width -350, 20);
+    box4 = createSprite(width/2, -1000, width -350, 20);
+    box5 = createSprite(width/2, -1500, width -350, 20);
+    box6 = createSprite(width/2, -2000, width -350, 20);
+    box7 = createSprite(width/2, -2500, width -350, 20);
   }
 
   play(){

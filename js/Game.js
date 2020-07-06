@@ -81,11 +81,14 @@ class Game {
         cars[index-1].y = y;
 
         if (index === player.index){
+          stroke(10);
+          fill("red");
+          ellipse(x, y, 80, 80);
           cars[index - 1].shapeColor = "red";
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y;
         }
-       
+
         //textSize(15);
         //text(allPlayers[plr].name + ": " + allPlayers[plr].distance, 120,display_position)
       }
